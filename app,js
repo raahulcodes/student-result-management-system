@@ -15,3 +15,7 @@ students.forEach(student=>
 // 2. Creating a new Array that consist of only student's name
 let studentsName = students.map(student=>student.name);
 console.log(studentsName);
+
+// 3. Creating another array where student marks will increase marks by 5
+let studentMarks = students.map(student=>student.marks+5);
+console.log(studentMarks);
