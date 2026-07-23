@@ -1,0 +1,17 @@
+let students = [
+    { name: "Rahul", marks: 85, course: "JavaScript" },
+    { name: "Priya", marks: 72, course: "Python" },
+    { name: "Amit", marks: 91, course: "JavaScript" },
+    { name: "Sneha", marks: 64, course: "Java" }
+];
+
+// 1. Displaying Every Student's Complete Information
+students.forEach(student=>
+{
+    console.log("Name: " + student.name + " Marks: " + student.marks + " Course: " + student.course);
+}
+)
+
+// 2. Creating a new Array that consist of only student's name
+let studentsName = students.map(student=>student.name);
+console.log(studentsName);
