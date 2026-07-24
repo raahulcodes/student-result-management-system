@@ -47,3 +47,38 @@ console.log(studentResult);
 // 7. Converting Student Name to uppercase
 let studentNames = students.map(student=>student.name.toUpperCase());
 console.log(studentNames);
+
+// 8. now adding a grade property
+let studentGrades = students.map(student=>
+{
+        let grade;
+        if(student.marks>=90)
+        {
+            grade = "A";
+        }
+
+        else if(student.marks<90 && student.marks>=80)
+        {
+            grade = "B";
+        }
+
+        else if(student.marks<80 && student.marks>=70)
+        {
+            grade = "C";
+        }
+
+        else 
+        {
+            grade = "D";
+        }
+
+        return {
+            name: student.name,
+            marks: student.marks,
+            course: student.course,
+            grade: grade
+        };
+}
+)
+
+console.log(studentGrades);
