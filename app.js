@@ -94,3 +94,14 @@ let studentFields = students.map(student=>
 )
 
 console.log(studentFields);
+
+// 10. creating a new array to display marks in %
+let studentDetail = students.map(student=>
+{
+    return {
+        student: student.name,
+        percentage: student.marks +"%"
+    }
+}
+)
+console.log(studentDetail);
