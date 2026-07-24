@@ -48,7 +48,7 @@ console.log(studentResult);
 let studentNames = students.map(student=>student.name.toUpperCase());
 console.log(studentNames);
 
-// 8. now adding a grade property
+// 8. now adding a grade
 let studentGrades = students.map(student=>
 {
         let grade;
@@ -82,3 +82,15 @@ let studentGrades = students.map(student=>
 )
 
 console.log(studentGrades);
+
+// 9. creating a new array with only marks and course fields
+let studentFields = students.map(student=>
+{
+    return {
+        marks:student.marks,
+        course:student.course
+    }
+}
+)
+
+console.log(studentFields);
