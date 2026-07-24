@@ -43,3 +43,7 @@ let studentResult = students.map(student=>
 }
 )
 console.log(studentResult);
+
+// 7. Converting Student Name to uppercase
+let studentNames = students.map(student=>student.name.toUpperCase());
+console.log(studentNames);
