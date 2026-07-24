@@ -16,6 +16,30 @@ students.forEach(student=>
 let studentsName = students.map(student=>student.name);
 console.log(studentsName);
 
-// 3. Creating another array where student marks will increase marks by 5
+// 3. Creating another array where i will increase marks by 5
 let studentMarks = students.map(student=>student.marks+5);
 console.log(studentMarks);
+
+// 4. Creating an array that consists of only course names
+let studentCourses = students.map(student=>student.course);
+console.log(studentCourses);
+
+// 5. Now creating an array object with pass and fail field for a student 
+let studentFinal = students.map(student=>
+{
+    return{
+        name: student.name,
+        marks: student.marks,
+        result: student.marks>70? "Pass" : "Fail"
+    }
+}
+)
+console.log(studentFinal);
+
+// 6. Creating an array of strings
+let studentResult = students.map(student=>
+{
+    return student.name + " scored " + student.marks + " marks.";
+}
+)
+console.log(studentResult);
